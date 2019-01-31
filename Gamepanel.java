@@ -8,9 +8,9 @@ public class Gamepanel extends JPanel {
 
 private int strikes;
 private String currentword;
-private String[] celebwords = {"Taylor Swift", "Drake", "Tom Hanks"}; /* "Emma Stone", "Brad Pitt", 
+private String[] celebwords = {"Taylor Swift", "Drake", "Tom Hanks", "Emma Stone", "Brad Pitt", 
 							   "Angelina Jolie", "Andrew Garfield", "Leonardo Dicaprio",
-							  "Nicole Kidman", "Meryl Streep"}; */
+							  "Nicole Kidman", "Meryl Streep"}; 
 private ArrayList<String> words;
 private String ptword = " ";
 private String firstword;
@@ -20,7 +20,6 @@ private ArrayList <Character> guessletters;
 	{
 		words = new ArrayList<String>();
 		words.addAll(Arrays.asList(celebwords));
-		guessletters = new ArrayList<Character>();
 		strikes = 0;
 		
 		firstword = getnewword();
@@ -48,6 +47,7 @@ private ArrayList <Character> guessletters;
 	
 	public String getnewword()
 	{
+		guessletters = new ArrayList<Character>();
 		if (!words.isEmpty())
 		{
 		int randindex = (int)(Math.random() * words.size());
