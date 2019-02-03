@@ -307,7 +307,7 @@ private ArrayList <Character> guessletters;
 		{
 		
 		g2.setColor(Color.BLACK);
-		g2.setFont(new Font("Braggadocio", Font.BOLD, 30));
+		g2.setFont(new Font("Braggadocio", Font.BOLD, 25));
 		g2.drawString(ptword, (200 - (ptword.length() * 5)), 375);
 		}
 	}
